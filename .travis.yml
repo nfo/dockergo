@@ -1,0 +1,14 @@
+sudo: required
+
+language: go
+
+go:
+  - tip
+
+services:
+  - docker
+
+before_install:
+  - docker build -t example-scratch .
+  - docker run -it example-alpine
+  - docker ps -a
