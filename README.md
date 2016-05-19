@@ -1,6 +1,7 @@
 ```bash
 make
-docker build -t example-scratch -f Dockerfile.scratch .
+docker build -t example-scratch .
+docker run -it example-scratch
 ```
 
 Sources:

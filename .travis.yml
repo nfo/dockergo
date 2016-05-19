@@ -10,5 +10,5 @@ services:
 
 after_success:
   - docker build -t example-scratch .
-  - docker run -it example-alpine
+  - docker run -it example-scratch
   - docker ps -a
